@@ -1,0 +1,10 @@
+<div class="join-form">
+    <form (ngSubmit)="onSubmit()" #joinForm="ngForm">
+        <h2 class="header">buzzer-client-angular</h2>
+        <ul>
+            <li><input placeholder="Username" ngModel name="userName"></li>
+            <li><input placeholder="Game ID" ngModel name="gameId"></li>
+            <li class="join-button"><button type="submit">Join Game</button></li>
+        </ul>
+    </form>
+</div>

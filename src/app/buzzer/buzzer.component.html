@@ -1,0 +1,11 @@
+<div class="gameInfo">
+    <h2>User: {{ user.userName }} </h2>
+    <h2>GameID: {{ user.gameId }} </h2>
+</div>
+<div class="container">
+    <div (click)="buzz()"  class="round-button">
+            <div [ngClass]="buzzedIn ? 'locked':'unlocked'"  class="round-button-circle">
+                <a class="round-button">Buzz</a>
+            </div>
+    </div>
+</div>
